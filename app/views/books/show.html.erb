@@ -26,3 +26,8 @@
   <%= review.body %><br>
   by <%= review.user.email %> さん
 <% end %>
+
+<h2>レビュー投稿者一覧</h2>
+<% @book.users.each do |user| %>
+  <%= user.email %>
+<% end %>
